@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Laporan Produksi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="card">
+        <div id="logo">
+            <img src="logout.jpeg" alt="Logo Perusahaan">
+        </div>
+        <h2>Laporan Produksi</h2>
+        <p class="subtitle">Input data operasional harian</p>
+
+
+        <form id="formProduksi">
+            <div class="field">
+                <label>Nama Costumer</label>
+                <input type="text" id="nama_id" required>
+            </div>
+
+            <div class="field">
+                <label>Job Site</label>
+                <input type="text" id="job_site" required>
+            </div>
+
+            <div class="field">
+                <label>Status Kontraktor</label>
+                <select id="status_kontraktor" required>
+                    <option value="">Pilih Status</option>
+                    <option>Main Contractor</option>
+                    <option>Sub Contractor</option>
+                </select>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <label>Target Produksi</label>
+                    <input type="number" id="target_produksi">
+                </div>
+
+                <div class="field">
+                    <label>SR (Stripping Ratio)</label>
+                    <input type="number" step="0.01" id="sr">
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <label>Unit Populasi</label>
+                    <input type="number" id="unit_populasi">
+                </div>
+
+                <div class="field">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity">
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <label>Productivity</label>
+                    <input type="number" step="0.01" id="productivity">
+                </div>
+
+                <div class="field">
+                    <label>Fuel Consumption (ltr/jam)</label>
+                    <input type="number" step="0.01" id="fuel_consumption">
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <label>PA (Physical Availability) %</label>
+                    <input type="number" step="0.01" id="pa">
+                </div>
+
+                <div class="field">
+                    <label>UA (Use of Availability) %</label>
+                    <input type="number" step="0.01" id="ua">
+                </div>
+            </div>
+
+            <button id="simpanData" type="submit">Simpan Data</button>
+
+            <p id="info"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #ffffff;
+  width: 480px;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+h2 {
+  margin: 0;
+  color: #1a1f36;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #edff4f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background: #ebe125;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b3aa09;
+}
+
+#info {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  color: green;
+}
+
+#logo {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+
+#logo img {
+  width: 60px;
+  height: 60px;
+}
