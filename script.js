@@ -28,7 +28,6 @@ document.getElementById("formProduksi").addEventListener("submit", function(e) {
     // info.innerText = "Data berhasil disimpan";
     info.appendChild(textInfo);
     formProduksi.reset();
-    info.reset();
   });
 });
 
